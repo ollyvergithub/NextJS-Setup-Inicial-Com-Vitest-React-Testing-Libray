@@ -10,4 +10,4 @@ RUN yarn install
 
 EXPOSE 3000
 
-ENTRYPOINT [ "npm", "run", "dev", "--", "-p", "3000" ]
+ENTRYPOINT [ "yarn", "dev", "-p", "3000" ]
