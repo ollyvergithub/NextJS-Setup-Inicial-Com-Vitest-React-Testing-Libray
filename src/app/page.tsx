@@ -9,7 +9,7 @@ export default function Home() {
 
     return (
         <div>
-            <h1>Auto Servico Next Vitest</h1>
+            <h1>Setup Inicial NextJS com Vitest e React Testing Library</h1>
             <Button onClick={() => handleClick()}>Clique-me</Button>
         </div>
     );

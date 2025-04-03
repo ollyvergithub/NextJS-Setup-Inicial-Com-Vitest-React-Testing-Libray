@@ -10,8 +10,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Ultragaz Energia Inteligente",
-  description: "Ultragaz Energia Inteligente",
+  title: "Setup Inicial NextJS com Vitest e React Testing Library",
+  description: "Setup Inicial NextJS com Vitest e React Testing Library",
 };
 
 export default function RootLayout({
