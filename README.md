@@ -17,8 +17,38 @@
 ```base
 docker compose up
 ```
-
 Após isso, o projeto estará executando no endereço [localhost:3000](http://localhost:3000).
+
+## 🧪 Executando os testes com Docker
+
+### Acesse o container
+
+```bash
+docker-compose exec setup_inicial_app sh
+```
+
+### Rode os testes
+```bash
+npm run test
+# or
+yarn run test
+```
+
+## 🧪 Executando a cobertura dos testes
+
+### Acesse o container
+
+```bash
+docker-compose exec setup_inicial_app sh
+```
+
+### Rode os testes
+
+```bash
+npm run test:coverage
+# or
+yarn run test:coverage
+```
 
 ## 🚀 Executando o projeto sem Docker
 
@@ -58,4 +88,9 @@ yarn run test:coverage
 
 Pelo fato do projeto estar sendo executado através de um container e com um volume configurado, qualquer alteração feita no código fonte será replicada automaticamente, sem necessidade de reiniciar o container.
 
+##### Para corrigir problemas de dependências na sua IDE, copie a node_modules para dentro do seu container
+
+```bash
+sudo docker cp setup_inicial_app:/app/node_modules .
+```
 
